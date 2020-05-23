@@ -4,6 +4,22 @@
 /* акцент #2196F3 */
 /* вторичный цвет фона #F5F4FA*/
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Общие стили */
 :root {
   --primary-text-color: #212121;
@@ -27,6 +43,9 @@
 /* Logo */
 
 .list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -42,6 +61,22 @@
 
 .logo-accent {
   color: var(--accent-color);
+}
+
+/* Page header */
+
+.page-header {
+ background-color: #FFFFFF;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+ 
+  border: 2px solid tomato;
 }
 
 /* Site nav */
@@ -92,6 +127,10 @@
   background-color: #2f303a;
 }
 
+.footer-logo .logo {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 /* Logo */
 
 .page-footer .logo {
@@ -125,6 +164,9 @@
 /* Address */
 
 .contact-information .aside {
+  margin-top: 0;
+  margin-bottom: 9px;
+
   color: var(--complementary-color);
 
   font-size: 14px;
@@ -132,6 +174,8 @@
 }
 
 .contact-information .item {
+  margin-top: 0;
+  margin-bottom: 9px;
   color:rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
@@ -187,22 +231,28 @@
 /* Hero */
 
 .hero {
+  text-align: center;
+
   background-color: #757575;
+
+  border: 2px solid lime;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom:46px;
+ 
   color: var(--complementary-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
 /* Button */
 
-.button-primary{
+.button-primary {
   color: var(--complementary-color);
   background-color: var(--accent-color);
   text-decoration: none;
@@ -211,13 +261,19 @@
   font-size: 16px;
   line-height: 1.87;
   display: flex;
-  align-items: center;
   letter-spacing: 0.06em;
 }
 
 /* Section */
+.section,
+.section-team {
+padding-top: 94px;
+padding-bottom: 94px;
+}
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--primary-text-color);
 
   font-weight: 700;
@@ -229,6 +285,9 @@
 /* Features */
 
 .future-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--primary-text-color)
   
   font-weight: 700;
@@ -250,6 +309,9 @@
 }
 
 .future-list .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--title-text-color);
   
   font-size: 14px;
@@ -277,10 +339,14 @@
 }
 
 .team .item {
+  margin-top: 0;
+  margin-bottom: 30px;
   background-color: #ffffff;
 }
 
 .team .title{
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -290,6 +356,8 @@
 }
 
 .team .text {
+  margin-top: 0;
+
   color: var(--title-text-color);
 
   font-size: 16px;
